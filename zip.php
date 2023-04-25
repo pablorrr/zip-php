@@ -72,10 +72,12 @@ Class ZipArchiver {
 $zipper = new ZipArchiver;
 
 // Path of the directory to be zipped
-$dirPath = 'example-app';
+//gdy zippujesz folder w ktrym jest plik zip.php
+$dirPath = dirname(__FILE__);
 
+//gdy zippujesz folder ktry jest na zaewnatrz pliku zip.php 
 // Path of output zip file
-$zipPath = 'example-app.zip';
+//$zipPath = 'zip-file.zip';
 
 // Create zip archive
 $zip = $zipper->zipDir($dirPath, $zipPath);
